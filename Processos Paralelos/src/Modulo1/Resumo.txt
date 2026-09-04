@@ -1,0 +1,4 @@
+---  Módulo 1 — O Básico de Threads e a Condição de Corrida ---
+
+Criar threads em Java, fazê-las somar/subtrair de uma conta compartilhada
+sem sincronização e ver o saldo final dar errado (violação de safety / perda da invariante).
