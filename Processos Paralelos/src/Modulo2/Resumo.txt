@@ -1,0 +1,4 @@
+---  Módulo 2 — Seção Crítica e Atomicidade ---
+
+Dessa vez, pegamos a classe Conta e adicionamos o atributo "synchronized" para que a segunda thread, so inicie
+a tarefa atribuida a ela, depois que a primeira foi executada. Evitando data races
