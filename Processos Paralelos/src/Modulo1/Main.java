@@ -2,14 +2,14 @@ package Modulo1;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Conta conta = new Conta(200);
 
         Runnable tarefa = new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i <= 10000; i++) {
+                for (int i = 1; i <= 10000; i++) {
                     conta.depositar();
                 }
             }
@@ -21,5 +21,9 @@ public class Main {
         t1.start();
         t2.start();
 
+        t1.join();
+        t2.join();
+
+        System.out.println(conta.getSaldo());
     }
 }

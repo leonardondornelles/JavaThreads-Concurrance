@@ -7,6 +7,10 @@ public class Conta {
         this.saldo = saldo;
     }
 
+    public int getSaldo() {
+        return saldo;
+    }
+
     public void depositar(){
         saldo++;
     }
